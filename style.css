@@ -236,7 +236,8 @@ body {
     margin-right: 16px;
     margin-left: 16px;
 }
-footer{
+
+footer {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
     display: flex;
     flex-direction: row;
@@ -244,20 +245,33 @@ footer{
     justify-content: space-around;
     height: 424px;
 }
-.footerRight{
+
+.footerLeft p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.email{
+    color: #919191;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footerRight {
     background-color: #FFFFFF;
     width: 306px;
     height: 72px;
     border-radius: 8px;
-    padding: 8px,24px;
+    padding: 8px, 24px;
     gap: 8px;
     display: flex;
     align-items: center;
 }
-.footerRight a{
+
+.footerRight a {
     display: block;
 }
-.black{
+
+.black {
     background-color: #000000;
 }
 
