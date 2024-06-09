@@ -237,10 +237,28 @@ body {
     margin-left: 16px;
 }
 footer{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 424px;
+}
+.footerRight{
+    background-color: #FFFFFF;
+    width: 306px;
+    height: 72px;
+    border-radius: 8px;
+    padding: 8px,24px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.footerRight a{
+    display: block;
+}
+.black{
+    background-color: #000000;
 }
 
 /* rwd設計-手機板 */
