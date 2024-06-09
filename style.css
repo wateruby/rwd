@@ -46,6 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* 網頁版 */
 body {
     line-height: 1.5;
     font-family: Noto Sans;
@@ -98,4 +101,10 @@ body {
     margin-right: 16px;
     margin-left: 16px;
   }
-  
+  /* rwd設計-手機板 */
+   @media(max-width:1320px){
+    .container {       
+        flex-direction: column;         
+      }
+
+  }
