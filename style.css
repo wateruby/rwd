@@ -3,108 +3,268 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
 /* 網頁版 */
+header {
+    height: 96px;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    display: flex;
+}
+
+header img {
+    width: 90px;
+    height: 40px;
+    margin-left: 90px;
+}
+
+.more {
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border: none;
+}
+
+.menu {
+    display: flex;
+    margin: 32px auto;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+
+
 body {
     line-height: 1.5;
     font-family: Noto Sans;
-  }
-  .content {
+}
+
+.content {
     padding: 120px 0px;
-  }
-  .container {
+}
+
+.container {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 1296px;
     justify-content: space-between;
-  }
-  .item {
+}
+
+.item {
     width: 636px;
     margin-bottom: 80px;
-  }
-  .item img {
+}
+
+.item img {
     width: 636px;
     height: 400px;
     border-radius: 8px;
     border: 1px #f1f1f1 solid;
     margin-bottom: 16px;
-  }
-  .item h2 {
+}
+
+.item h2 {
     font-size: 28px;
     line-height: 33.6px;
     color: #3b3b3b;
     margin-left: 16px;
     line-height: 1.2;
-  }
-  .item p {
+}
+
+.item p {
     font-size: 16px;
     line-height: 33.6px;
     color: #919191;
     margin-left: 16px;
-  }
-  .tag li {
+}
+
+.tag li {
     background-color: #f1f1f1;
     padding: 4px 12px;
     border-radius: 16px;
     display: inline-block;
-  
     font-size: 16px;
-  
     color: #3b3b3b;
     margin-top: 24px;
     margin-right: 16px;
     margin-left: 16px;
-  }
-  /* rwd設計-手機板 */
-   @media(max-width:1320px){
-    .container {       
-        flex-direction: column;         
-      }
+}
 
-  }
+/* rwd設計-手機板 */
+@media(max-width:1320px) {
+    header {
+        height: 56px;
+        border-bottom: 1px solid #f1f1f1;
+        margin: 0 auto;
+        padding: 8px 12px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    header img {
+        width: 74px;
+        height: 33px;
+        margin-left: 12px;
+    }
+
+    .more {
+        visibility: visible;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+}
