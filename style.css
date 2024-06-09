@@ -236,9 +236,15 @@ body {
     margin-right: 16px;
     margin-left: 16px;
 }
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* rwd設計-手機板 */
-@media(max-width:1320px) {
+@media(max-width:1300px) {
     header {
         height: 56px;
         border-bottom: 1px solid #f1f1f1;
