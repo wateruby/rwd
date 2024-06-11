@@ -176,20 +176,34 @@ header img {
 .menu a {
     text-decoration: none;
 }
+.banner{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    background-color: #FAFAFA;
+    padding: 80px 0;
+   
+}
+.banner_detail{
+    display: flex; 
+    text-align: center;
 
-
+}
 
 body {
     line-height: 1.5;
     font-family: Noto Sans;
+    width: 1296px;
+    margin: 0 auto;
 }
 
 .content {
     padding: 120px 0px;
+    
 }
 
 .container {
-    margin: 0 auto;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -256,7 +270,7 @@ footer {
     line-height: 24px;
 }
 
-.footerRight {
+.footerRight li{
     background-color: #FFFFFF;
     width: 306px;
     height: 72px;
@@ -271,7 +285,7 @@ footer {
     display: block;
 }
 
-.black {
+.footerRight .black {
     background-color: #000000;
 }
 
@@ -299,6 +313,10 @@ footer {
 
     .more {
         visibility: visible;
+    }
+    .content{
+        margin: 0 auto;
+        
     }
 
     .container {
