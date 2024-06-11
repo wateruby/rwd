@@ -138,7 +138,7 @@ table {
 /* 網頁版 */
 body {
     line-height: 1.5;
-    font-family: Noto Sans;   
+    font-family: Noto Sans;
     margin: 0 auto;
 }
 
@@ -183,13 +183,13 @@ header img {
     text-decoration: none;
 }
 
-.banner {   
+.banner {
     margin-bottom: 120px;
     background-color: #FAFAFA;
     padding: 80px 0;
     display: flex;
     text-align: center;
-  
+
 }
 
 .banner h2 {
@@ -209,7 +209,8 @@ header img {
     line-height: 24px;
     justify-content: space-between;
 }
-.banner_detail h3{
+
+.banner_detail h3 {
     color: #5B5B5B;
     text-decoration: underline;
 
@@ -223,10 +224,10 @@ header img {
 }
 
 .container {
-    
+
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -269,11 +270,21 @@ header img {
     margin-right: 16px;
     margin-left: 16px;
 }
-.page{
-    text-align: center;
-    display:inline-block;
+
+
+.page li {   
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 2px 13px;
+    gap: 10px;
     margin: 0 auto;
-    
+    text-align: center;
+}
+.page li:hover{
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 footer {
@@ -283,7 +294,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 424px;
-    
+
 }
 
 .footerLeft p {
@@ -296,7 +307,8 @@ footer {
     font-size: 20px;
     line-height: 24px;
 }
-.footerRight{
+
+.footerRight {
     display: flex;
     text-align: center;
 }
@@ -347,16 +359,16 @@ footer {
         visibility: visible;
     }
 
-    .content{
+    .content {
         margin: 0 auto;
         width: auto;
     }
 
     .container {
-        align-items: center;        
+        align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        
+
     }
-    
+
 }
