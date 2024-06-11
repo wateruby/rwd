@@ -219,9 +219,11 @@ header img {
 
 .content {
     margin: 0 auto;
+    width: 1296px;
 }
 
 .container {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;   
@@ -281,6 +283,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 424px;
+    
 }
 
 .footerLeft p {
@@ -293,6 +296,10 @@ footer {
     font-size: 20px;
     line-height: 24px;
 }
+.footerRight{
+    display: flex;
+    text-align: center;
+}
 
 .footerRight li {
     background-color: #FFFFFF;
@@ -303,10 +310,11 @@ footer {
     gap: 8px;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .footerRight a {
-    display: block;
+    display: inline-block;
 }
 
 .footerRight .black {
@@ -314,7 +322,7 @@ footer {
 }
 
 /* rwd設計-手機板 */
-@media(max-width:1300px) {
+@media(max-width:1330px) {
     header {
         height: 56px;
         border-bottom: 1px solid #f1f1f1;
@@ -339,13 +347,16 @@ footer {
         visibility: visible;
     }
 
-    .content {
+    .content{
         margin: 0 auto;
-
+        width: auto;
     }
 
     .container {
+        align-items: center;        
         flex-direction: column;
+        flex-wrap: nowrap;
+        
     }
-
+    
 }
